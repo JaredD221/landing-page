@@ -1,7 +1,12 @@
 /* Have fun. This is your site. */
 
 body {
-  background: lightgray;
+  background: seagreen;
+}
+
+h1 {
+  text-align: center;
+  color: darkblue;
 }
 
 /* Main Container */
