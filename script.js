@@ -1,5 +1,5 @@
 // Check JS is Connected
-console.log('OK');
+console.log('Oke');
 
 // get JSON data
 // create anchor link for each item
