@@ -1,12 +1,27 @@
 /* Have fun. This is your site. */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: seagreen;
+  background: linear-gradient(to bottom, seagreen, lightblue);
 }
 
 h1 {
   text-align: center;
-  color: darkblue;
+  animation: color-change 4s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightblue;
+  }
+  
 }
 
 /* Main Container */
@@ -17,5 +32,11 @@ main {
   
   /* adjust to your design */
   max-width: 40em;
+}
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
 }

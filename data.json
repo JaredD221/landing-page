@@ -1,16 +1,25 @@
+
+
+
+
+
+
 {
 "myLinks": [
     {
-    "name": "GitHub",
-    "url": "https://github.com/JaredD221"
+        "name": "GitHub",
+        "url": "https://github.com/JaredD221",
+        "icon": "fab fa-github"
     },
     {
-    "name": "CodePen",
-    "url": "https://codepen.io/JaredD221"
+        "name": "CodePen",
+        "url": "https://codepen.io/JaredD221",
+        "icon": "fab fa-codepen"
     },
     {
-    "name": "LinkedIn",
-    "url": "https://www.linkedin.com/in/jared-diaz-934591331"
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jared-diaz-934591331",
+        "icon": "fab fa-linkedin"
     }
-    ]
+]
 }
