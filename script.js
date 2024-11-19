@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update the <h1> element
             const h1 = document.querySelector('h1');
             h1.textContent = data1.name;
-            h1.style.animation = 'pulse 1s infinite';
 
             // Create and insert the <p> element with the bio content
             const p = document.createElement('p');

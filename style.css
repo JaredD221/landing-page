@@ -2,8 +2,9 @@
 
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 25;
+  border: 3px groove lightskyblue;
 }
 
 body {
