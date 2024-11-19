@@ -7,36 +7,73 @@ html, body {
 }
 
 body {
-  background: linear-gradient(to bottom, seagreen, lightblue);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, seagreen, lightblue, lightgrey);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* centers container to page */
+  margin-inline: auto;
+  /* adjust to your design */
+  max-width: 60em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: lightgray; 
 }
 
 h1 {
   text-align: center;
-  animation: color-change 4s infinite;
+  color: black;
+  animation: color-change 5s infinite;
 }
+
 @keyframes color-change {
   0% {
     color: black;
   }
   50% {
-    color: lightblue;
+    color: lightgray;
   }
-  
+  75% {
+    color: lightgreen;
+  }
+  100%{
+    color: black;
+  }
 }
 
-/* Main Container */
-main {
+#content {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  /* centers container to page */
-  margin-inline: auto;
-  
-  /* adjust to your design */
-  max-width: 40em;
+}
+
+#links, #skills {
+  flex: 1;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding: 10px;
+  margin: 0;
 }
 
 img {
   width: 100%;
+  max-width: 400px; /* Set a maximum width for the image */
   height: auto;
   display: block;
+  margin: 0 auto; /* Center the image horizontally */
   border-radius: 15px;
 }

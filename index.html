@@ -1,52 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jared A. Diaz-landing-page</title>
-
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
-    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
-    <link rel="shortcut icon" href="/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Web Dev Starter" />
+    <title>Jared A. Diaz</title>
     <link rel="manifest" href="/favicons/site.webmanifest" />
-
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Stylesheets -->
-      <!-- Normalize -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-   
-   <!-- Baseline Styling -->
-   <link rel="stylesheet" href="base.css">
-   <!-- Specific Elements -->
-   <link rel="stylesheet" href="style.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Baseline Styling -->
+    <link rel="stylesheet" href="base.css">
+    <!-- Specific Elements -->
+    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <!-- JavaScript -->
+    <!-- JavaScript -->
     <script src="script.js" defer></script> 
-   
 </head>
 <body>
-
     <main>
-
-    
-    <h1></h1>
-    <img src="145868628.jpg" alt="Jared Alexis Diaz">
-
-    <h2>My Links</h2>
-
-    <!-- dynamically generate external links from JSON file -->
-    <ul id="myLinks"></ul>
-
-     <!-- GitHub Icon Link 
-     <a href="https://github.com/jaredD221" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-    </a>-->
-
+        <div>
+            <h1>Jared A. Diaz</h1>
+            <img src="145868628.jpg" alt="Jared Alexis Diaz">
+        </div>
+        <div id="content">
+            <div id="links">
+                <h2>My Links</h2>
+                <!-- dynamically generate external links from JSON file -->
+                <ul id="myLinks" >
+                    <!-- Links will be dynamically generated here -->
+                </ul>
+            </div>
+            <div id="skills">
+                <h2>My Skills</h2>
+                <ul id="skillsList">
+                    <!-- Skills will be dynamically generated here -->
+                </ul>
+            </div>
+        </div>
     </main>
-    
+    <footer>
+        <p>&copy; 2023 Jared A. Diaz. All rights reserved.</p>
+    </footer>
 </body>
 </html>

@@ -1,33 +1,36 @@
 // Check JS is Connected
 console.log('Oke');
 
-// Define the data object
-const data = {
-  name: 'Jared Alexis Diaz',
-  major: 'Computer Science',
-  bio: `My name is Jared Diaz and I am a computer science major. My interest for my studies include game desing, game developement,and web development. 
-        With that knowledge I hope to be able to creat my own game someday whether it be simple or complex as long as the game is fun that will fine by me. 
-        Currently I am studing at Eastern Washington University and I plan to be graduated by 2026, After graduation I plan to find a position with a game development team whether it be big or small.`
-};
-
 // Update the content of the <h1> element and add the animation
 document.addEventListener('DOMContentLoaded', function() {
-    const h1 = document.querySelector('h1');
-    h1.textContent = data.name;
-    
-
-    // Create and insert the <p> element with the bio content
-    const p = document.createElement('p');
-    p.innerHTML = data.bio;
-    const main = document.querySelector('main');
-    main.insertBefore(p, main.querySelector('h2'));
-
-    // get JSON data
-    // create anchor link for each item
+    // Fetch data from JSON file
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
+            // Extract data1 and myLinks from the JSON
+            const data1 = data.data1[0];
             const myLinks = data.myLinks;
+
+            // Update the <h1> element
+            const h1 = document.querySelector('h1');
+            h1.textContent = data1.name;
+            h1.style.animation = 'pulse 1s infinite';
+
+            // Create and insert the <p> element with the bio content
+            const p = document.createElement('p');
+            p.innerHTML = data1.bio;
+            const main = document.querySelector('main');
+            main.insertBefore(p, main.querySelector('#content'));
+
+            // Create and insert the skills list
+            const skillsList = document.getElementById('skillsList');
+            data1.skills.forEach(skill => {
+                const li = document.createElement('li');
+                li.textContent = skill;
+                skillsList.appendChild(li);
+            });
+
+            // Create anchor links for each item in myLinks
             const ul = document.getElementById('myLinks');
             myLinks.forEach(link => {
                 const li = document.createElement('li');
@@ -45,5 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 li.appendChild(a);
                 ul.appendChild(li);
             });
+
+            
         });
 });

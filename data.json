@@ -21,5 +21,20 @@
         "url": "https://www.linkedin.com/in/jared-diaz-934591331",
         "icon": "fab fa-linkedin"
     }
+],
+
+"data1": [
+    {
+        "name": "Jared Diaz",
+        "bio": "My name is Jared Diaz and I am a computer science major. My interest for my studies include game design, game development, and web development. With that knowledge I hope to be able to create my own game someday whether it be simple or complex as long as the game is fun that will be fine by me. Currently, I am studying at Eastern Washington University and I plan to graduate by 2026. After graduation, I plan to find a position with a game development team whether it be big or small.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Java",
+            "Gaming",
+            "Master Cooking (Only with grilled cheese)"
+        ]
+    }
 ]
 }
