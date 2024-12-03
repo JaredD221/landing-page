@@ -4,13 +4,14 @@ html, body {
   height: 100%;
   margin: auto;
   padding: 25;
-  border: 3px groove lightskyblue;
+  background-repeat: no-repeat;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, seagreen, lightblue, lightgrey);
+  background-attachment: fixed;
 }
 
 main {
