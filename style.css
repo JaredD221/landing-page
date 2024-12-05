@@ -54,6 +54,8 @@ h1 {
   }
 }
 
+
+
 #content {
   display: flex;
   justify-content: space-between;
@@ -62,7 +64,7 @@ h1 {
 
 #links, #skills {
   flex: 1;
-  padding: 10px;
+  padding-left: 120px;
 }
 
 ul {
@@ -78,4 +80,26 @@ img {
   display: block;
   margin: 0 auto; /* Center the image horizontally */
   border-radius: 15px;
+}
+
+p {
+  text-align: center;
+  color: black;
+  width: 75%;
+}
+
+.word {
+  margin-right: 10px;
+  text-align: center;
+  display: inline-block; /* Ensure the span is inline-block for transform to work */
+  animation: moveAcross 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveAcross {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw); /* Move across the entire viewport width */
+  }
 }
