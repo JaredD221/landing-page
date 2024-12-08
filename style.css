@@ -89,10 +89,10 @@ p {
 }
 
 .word {
-  margin-right: 10px;
+  margin-right: 100px;
   text-align: center;
   display: inline-block; /* Ensure the span is inline-block for transform to work */
-  animation: moveAcross 15s linear infinite; /* Adjust the duration as needed */
+  animation: moveAcross 20s linear infinite; /* Adjust the duration as needed */
 }
 
 @keyframes moveAcross {
