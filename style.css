@@ -76,11 +76,12 @@ ul {
 
 img {
   width: 100%;
-  max-width: 400px; /* Set a maximum width for the image */
+  max-width: 300px; /* Set a maximum width for the image */
   height: auto;
   display: block;
   margin: 0 auto; /* Center the image horizontally */
   border-radius: 15px;
+  border: solid 2px black;
 }
 
 p {
@@ -98,9 +99,9 @@ p {
 
 @keyframes moveAcross {
   0% {
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
   }
   100% {
-    transform: translateX(100vw); /* Move across the entire viewport width */
+    transform: translateX(-100vw); /* Move across the entire viewport width */
   }
 }
