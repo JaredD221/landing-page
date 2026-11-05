@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Create and insert the <p> element with the bio content
             const p = document.createElement('p');
-            p.innerHTML = data1.bio;
+            p.innerHTML = data1.bio.join(' ');
             const main = document.querySelector('main');
             main.insertBefore(p, main.querySelector('#content'));
 
